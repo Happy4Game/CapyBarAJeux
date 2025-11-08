@@ -1,0 +1,39 @@
+article {
+  margin: auto;
+  box-shadow: 0px 0px 11px 8px #646464;
+  width: 85vw;
+  margin-top: 5vh;
+  padding-bottom: 8vh;
+  background-color: white;
+}
+article > img {
+  width: 94px;
+  rotate: -10deg;
+}
+article > div {
+  display: flex;
+  width: 85vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#welcome-part {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+#found-us-part {
+  width: 35vw;
+}
+#found-us-part > a > img {
+  width: 30vw;
+  display: block;
+  margin: auto;
+}
+#found-us-part > p,
+#found-us-part > h2 {
+  text-align: center;
+}
+#found-us-part a {
+  text-decoration: none;
+  color: black;
+}

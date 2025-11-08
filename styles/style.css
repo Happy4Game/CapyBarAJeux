@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Poppins Regular";
+  src: url(../assets/font/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(../assets/font/poppins/Poppins-Bold.ttf);
+}
+:root {
+  font-family: "Poppins Regular";
+  font-weight: 16px;
+  --primary-color: #869e90;
+  --secondary-color: #c69070;
+}
+* {
+  margin: 0;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logos > a > img {
+  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 24px;
+  height: 24px;
+}
+#bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+#shop-name {
+  background-color: white;
+  border-radius: 5px;
+  width: 20vw;
+  text-align: center;
+  padding: 1vw;
+  margin: auto;
+  margin-top: 5vh;
+  color: var(--secondary-color);
+}
+
+#shop-name > h1 {
+  font-family: "Poppins Bold";
+  text-shadow: 0 0 1px black;
+}
