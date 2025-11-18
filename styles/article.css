@@ -37,3 +37,31 @@ article > div {
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width: 600px) {
+  article {
+    box-shadow: inherit;
+    margin: auto;
+    width: 85vw;
+    padding-bottom: 8vh;
+    background-color: white;
+  }
+  article > div {
+    width: 80vw;
+    flex-direction: column;
+  }
+  #welcome-part {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+  #found-us-part {
+    width: 80vw;
+  }
+  article > img {
+    display: none;
+  }
+  #found-us-part > a > img {
+    width: 50vw;
+  }
+}

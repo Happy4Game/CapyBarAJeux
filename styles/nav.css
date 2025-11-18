@@ -16,3 +16,9 @@ nav a {
   margin-right: 1.5vw;
   margin-left: 1.5vw;
 }
+
+@media screen and (max-width: 600px) {
+  nav > div {
+    display: none;
+  }
+}
