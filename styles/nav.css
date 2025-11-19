@@ -6,6 +6,31 @@ nav > div {
   display: flex;
   align-items: center;
 }
+#burger {
+  margin-right: 3vw;
+  display: none;
+}
+#burger:hover {
+  cursor: pointer;
+}
+#nav-container {
+  display: none;
+  background-color: var(--primary-color);
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+}
+#nav-container > li {
+  margin-bottom: 3vh;
+}
+#nav-container > li a {
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+}
 nav > img {
   margin: 0.5vw;
   width: 58px;
@@ -18,7 +43,18 @@ nav a {
 }
 
 @media screen and (max-width: 600px) {
-  nav > div {
+  nav > div > h2,
+  nav > div > h4 {
     display: none;
+    width: 1vw;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  #burger {
+    display: block;
+  }
+  #burger > img {
+    width: 10vw;
   }
 }

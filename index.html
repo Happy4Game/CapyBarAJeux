@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./styles/nav.css" />
     <link rel="stylesheet" href="./styles/article.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <script src="./scripts/main.js"></script>
     <meta charset="UTF-8" />
     <link
       rel="shortcut icon"
@@ -16,18 +17,8 @@
     <meta name="og:title" content="Capy'Bar à jeux" />
     <title>Capy'Bar à Jeux</title>
   </head>
-  <body>
-    <nav>
-      <img src="./assets/img/capy_sans_fond.png" alt="Logo du Capy" />
-      <div>
-        <h2><a href="./index.html">Accueil</a></h2>
-        <h4><a href="./activites.html">Activités</a></h4>
-        <h4><a href="./nos-jeux.html">Nos jeux</a></h4>
-        <h4><a href="./notre-carte">Notre carte</a></h4>
-        <h4><a href="./nous-contacter.html">Nous contacter</a></h4>
-        <div id="burger"></div>
-      </div>
-    </nav>
+  <body onload="injectNavBar()">
+    <div id="nav-placeholder"></div>
     <img id="bg" src="./assets/img/salle.jpg" alt="Salle de jeu" />
 
     <div id="shop-name"><h1>LE CAPY'BAR A JEUX</h1></div>
@@ -72,8 +63,6 @@
         </div>
       </div>
     </article>
-    <footer>
-      <a href="./mentions-legales">Mentions légales</a>
-    </footer>
+    <div id="footer-placeholder"></div>
   </body>
 </html>
